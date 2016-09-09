@@ -7,6 +7,7 @@ class SerialReadPrint
 {
   public:
     void s_print(String message, int result);
+    void s_print(String message, unsigned int result);
     void s_print(String message, float result);
     void s_print(String message, char result);
     void s_print(String message, String result);

@@ -17,6 +17,8 @@
 
 #include <Arduino.h>
 #include <util/delay.h>
+#include "Wire.h"
+
 
 #define SIG_PIN  	9
 #define MAX_SIZE 	512		// 612
