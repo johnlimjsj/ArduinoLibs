@@ -176,6 +176,7 @@ int LifePlanters::readMoisture(){
 int LifePlanters::readLight(){
 	uint16_t light = soilSensor.getLight(true);
 	// uint16_t light = 40000;
+    serialRP.s_println("Light reading: ", light);
 	runavg_light.addValue(light);
 	uint16_t filtered = runavg_light.getAverage();
 	int mapped = _mapping(out_min_light, out_max_light, filtered, 236, 60000, 0);
